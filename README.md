@@ -1,51 +1,98 @@
-# Irsis Flowers
-Iris Flower Detection Using Logistic Regression
+Iris Species Classification Using Logistic Regression
 Overview
-This repository contains a machine learning model to classify iris flowers based on their sepal and petal measurements using logistic regression.
+This project demonstrates the use of logistic regression to classify iris species based on sepal length, sepal width, petal length, and petal width. The dataset contains three classes of 50 instances each, where each class refers to a type of iris plant.
 
-Features
-Data Preprocessing: Handling missing values, scaling, and encoding categorical variables.
+Dataset Information
+The dataset includes:
 
-Exploratory Data Analysis (EDA): Visualizing data distributions, correlations, and identifying patterns.
+sepal_length: Sepal length in cm
 
-Model Training: Implementing logistic regression for multi-class classification.
+sepal_width: Sepal width in cm
 
-Model Evaluation: Assessing model performance using metrics such as accuracy, precision, recall, and F1-score.
+petal_length: Petal length in cm
 
-Imbalanced Data Handling: Techniques to address class imbalance.
+petal_width: Petal width in cm
 
-Installation
-To get started, clone the repository and install the required dependencies:
+species: Target variable with three classes - Iris Setosa, Iris Versicolour, Iris Virginica
+
+Project Structure
+IRIS.csv: The dataset file.
+
+iris_classification.ipynb: Jupyter Notebook with the complete workflow.
+
+Requirements
+Python 3.x
+
+numpy
+
+pandas
+
+matplotlib
+
+seaborn
+
+scikit-learn
+
+Install the required packages using:
 
 bash
-git clone https://github.com/yourusername/iris-flower-detection.git
-cd iris-flower-detection
-pip install -r requirements.txt
+pip install numpy pandas matplotlib seaborn scikit-learn
+Steps to Execute
+Import Modules:
+
+Import necessary libraries for data manipulation, visualization, and model building.
+
+Load the Dataset:
+
+Load the dataset into a pandas DataFrame and inspect the first few rows.
+
+Data Preprocessing:
+
+Check for missing values and handle them if any.
+
+Encode categorical labels using LabelEncoder.
+
+Exploratory Data Analysis (EDA):
+
+Visualize feature distributions using histograms.
+
+Compute the correlation matrix and plot a heatmap.
+
+Model Training:
+
+Split the data into training and testing sets.
+
+Train a logistic regression model on the training data.
+
+Model Evaluation:
+
+Evaluate model performance using accuracy and classification report on both training and testing sets.
+
 Usage
-Data Preparation: Place your dataset in the data folder.
-
-Run Preprocessing: Execute the preprocessing script to clean and transform the data.
+Clone the repository:
 
 bash
-python preprocessing.py
-Train Model: Run the training script to build and evaluate the logistic regression model.
+git clone https://github.com/RAGUL1531/Irsis-Flowers-detection
+cd iris-classification
+Open and run the Jupyter Notebook:
 
 bash
-python train_model.py
-Dataset
-The dataset used in this project is sourced from the Iris flower dataset, which includes measurements of sepal length, sepal width, petal length, and petal width for three species of iris flowers: Setosa, Versicolor, and Virginica.
+jupyter notebook iris_classification.ipynb
+Results
+The logistic regression model achieved the following accuracy:
 
-Contributing
-We welcome contributions to improve this project. Please submit a pull request or create an issue for any bug reports, feature requests, or improvements.
+Training Accuracy: 96.67%
+
+Testing Accuracy: 100%
+
+Conclusion
+The logistic regression model performed exceptionally well on the Iris dataset, demonstrating its effectiveness in multi-class classification tasks. Further improvements can include trying different algorithms or hyperparameter tuning for even better results.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Acknowledgements
-UC Irvine Machine Learning Repository for providing the dataset.
+The Iris dataset is a well-known dataset in the machine learning community, provided by the UCI Machine Learning Repository.
 
-All contributors and open-source libraries used in this project.
-
-Contact
-If you have any questions or suggestions, feel free to reach out at [ragul2005328@gmail.com].
+Special thanks to the open-source community for providing the tools and libraries used in this project.
  
